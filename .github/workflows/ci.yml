@@ -27,4 +27,5 @@ jobs:
               run: |
                   pushd build/tests
                   ./tests_main --list-tests
+                  ./tests_main -s --benchmark-no-analysis
                   popd
