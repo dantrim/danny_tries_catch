@@ -1,5 +1,5 @@
 # dantrim_tries_catch
-A test repo for me to learn how to use the Catch2 testing framework
+A test repo for me to learn how to use the [Catch2 testing framework](https://github.com/catchorg/Catch2)
 
 ## Checkout and Install
 ```bash
