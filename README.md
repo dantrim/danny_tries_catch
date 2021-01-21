@@ -1,6 +1,8 @@
 # dantrim_tries_catch
 A test repo for me to learn how to use the [Catch2 testing framework](https://github.com/catchorg/Catch2)
 
+[![GitHub Actions Status Badge: CI/CD]][GitHub Actions Status: CI/CD]
+
 ## Checkout and Install
 ```bash
 $ git clone --recursive git@github.com:dantrim/danny_tries_catch.git
@@ -179,3 +181,7 @@ All tests passed (2 assertions in 1 test case)
 ```
 Configuration of the benchmarking (number of samples, etc) can be seen by
 inspecting the command line options (`./tests_main -h`).
+
+<!--- LINKS --->
+[GitHub Actions Status Badge: CI/CD]:https://github.com/dantrim/hamming-codec/workflows/CI/CD/badge.svg?branch=main
+[GitHub Actions Status: CI/CD]:https://github.com/dantrim/hamming-codec/actions?query=workflow%3ACI%2FCD+branch%3Amain
