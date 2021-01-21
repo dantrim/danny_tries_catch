@@ -48,13 +48,32 @@ All available tags:
    1  [vector]
 11 tags
 ```
-If we want to run only those tests that are testing the `generators`
-functionality of Catch2, we can do:
+We can list all tests matching a specific tag using the command
+line option `-t`:
+```bash
+./tests_main -t [generators]
+Tags for matching test cases:
+   1  [custom]
+   3  [generators]
+   1  [int]
+   1  [vector]
+4 tags
+```
+If we want to run only those tests matching the `generators` tag, we
+can do:
 ```bash
 $ ./tests_main [generators]
 Filters: [generators]
 ===============================================================================
 All tests passed (24 assertions in 3 test cases)
+```
+If we want to run only those tests that match a sub-tag, we can provide 
+multiple sets of tags:
+```bash
+./tests_main [generators][custom]
+Filters: [generators][custom]
+===============================================================================
+All tests passed (12 assertions in 1 test case)
 ```
 
 ## Benchmarking Functionality
