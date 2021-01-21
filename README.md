@@ -56,7 +56,7 @@ Filters: [generators]
 All tests passed (24 assertions in 3 test cases)
 ```
 
-## Reducing the Output from Benchmarks
+## Benchmarking Functionality
 Catch2 provides some minimal benchmarking functionality, which is
 exercised in the [test_benchmark test](tests/test_benchmark.h):
 ```bash
@@ -97,6 +97,7 @@ benchmark name                       samples       iterations    estimated
 ===============================================
 ```
 
+### Reducing the Output from Benchmarks
 To reduce the output, and just get the mean evaluation time over the
 samples, provide the `--benchmark-no-analysis` option:
 ```bash
