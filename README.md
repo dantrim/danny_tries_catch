@@ -4,7 +4,7 @@ A test repo for me to learn how to use the [Catch2 testing framework](https://gi
 [![GitHub Actions Status Badge: CI/CD]][GitHub Actions Status: CI/CD]
 
 ## Checkout and Install
-```bash
+```
 $ git clone --recursive git@github.com:dantrim/danny_tries_catch.git
 $ cd danny_tries_catch
 $ mkdir build
@@ -25,7 +25,7 @@ add a test calling a method from an external library.
 
 ## Run all Tests
 To list all available tests (their names and tags), do:
-```bash
+```
 $ cd /path/to/danny_tries_catch/build/tests
 $ ./tests_main --list-tests
 All available test cases:
@@ -50,7 +50,7 @@ All available test cases:
 9 test cases
 ```
 To run all tests, simply run the top-level test executable with no arguments:
-```bash
+```
 $ ./tests_main
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,7 +67,7 @@ assertions: 45 | 44 passed | 1 failed
 Tests are defined with specific [tags](https://github.com/catchorg/Catch2/blob/devel/docs/test-cases-and-sections.md#tags) in Catch2, and they
 can be used to specify specific tests to run. To list all tags, one can
 do:
-```bash
+```
 $ ./tests_main --list-tags 
 All available tags:
    1  [add1]
@@ -85,8 +85,8 @@ All available tags:
 ```
 We can list all tests matching a specific tag using the command
 line option `-t`:
-```bash
-./tests_main -t [generators]
+```
+$ ./tests_main -t [generators]
 Tags for matching test cases:
    1  [custom]
    3  [generators]
@@ -96,7 +96,7 @@ Tags for matching test cases:
 ```
 If we want to run only those tests matching the `generators` tag, we
 can do:
-```bash
+```
 $ ./tests_main [generators]
 Filters: [generators]
 ===============================================================================
@@ -104,8 +104,8 @@ All tests passed (24 assertions in 3 test cases)
 ```
 If we want to run only those tests that match a sub-tag, we can provide 
 multiple sets of tags:
-```bash
-./tests_main [generators][custom]
+```
+$ ./tests_main [generators][custom]
 Filters: [generators][custom]
 ===============================================================================
 All tests passed (12 assertions in 1 test case)
@@ -114,7 +114,7 @@ All tests passed (12 assertions in 1 test case)
 ## Benchmarking Functionality
 Catch2 provides some minimal benchmarking functionality, which is
 exercised in the [test_benchmark test](tests/test_benchmark.h):
-```bash
+```
 $ ./tests_main [benchmark]
 Filters: [benchmark]
 
@@ -155,7 +155,7 @@ benchmark name                       samples       iterations    estimated
 ### Reducing the Output from Benchmarks
 To reduce the output, and just get the mean evaluation time over the
 samples, provide the `--benchmark-no-analysis` option:
-```bash
+```
 $ ./tests_main [benchmark] --benchmark-no-analysis
 Filters: [benchmark]
 
