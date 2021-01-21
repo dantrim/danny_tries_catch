@@ -13,12 +13,13 @@ $ make
 
 ## Structure
 All tests are are defined following the file format `test_<name>.h` under 
-the [tests/](tests/) directory.
+the [tests/ directory](tests/).
 
 All tests are compiled into a single executable `tests_main`, defined
 under [tests/tests_main.cpp](tests/tests_main.cpp).
 
-A dummy library `foo` is built under [src/foo.h](src/foo.h).
+A dummy library `foo` is built under [src/foo.h](src/foo.h), in order to
+add a test calling a method from an external library.
 
 ## Run all Tests
 ```bash
