@@ -183,5 +183,5 @@ Configuration of the benchmarking (number of samples, etc) can be seen by
 inspecting the command line options (`./tests_main -h`).
 
 <!--- LINKS --->
-[GitHub Actions Status Badge: CI/CD]:https://github.com/dantrim/hamming-codec/workflows/CI/CD/badge.svg?branch=main
-[GitHub Actions Status: CI/CD]:https://github.com/dantrim/hamming-codec/actions?query=workflow%3ACI%2FCD+branch%3Amain
+[GitHub Actions Status Badge: CI/CD]:https://github.com/dantrim/danny_tries_catch/workflows/CI/CD/badge.svg?branch=main
+[GitHub Actions Status: CI/CD]:https://github.com/dantrim/danny_tries_catch/actions?query=workflow%3ACI%2FCD+branch%3Amain
