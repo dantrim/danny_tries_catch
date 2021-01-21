@@ -22,11 +22,44 @@ A dummy library `foo` is built under [src/foo.h](src/foo.h), in order to
 add a test calling a method from an external library.
 
 ## Run all Tests
+To list all available tests (their names and tags), do:
 ```bash
 $ cd /path/to/danny_tries_catch/build/tests
-$ ./test_main
-# a lot of output
+$ ./tests_main --list-tests
+All available test cases:
+  Add one to an input number
+      [add1][simple]
+  Add two to an input number
+      [add2][simple]
+  Testing Catch2 sections
+      [sections]
+  Fibonacci
+      [benchmark]
+  Illustrating basic GENERATE functionality with integers
+      [generators][int]
+  Illustrating basic GENERATE functionality with vectors
+      [generators][vector]
+  Illustrating custom generator
+      [custom][generators]
+  Test contents of data0
+      [fixtures]
+  Test of libfoo
+      [foo]
+9 test cases
 ```
+To run all tests, simply run the top-level test executable with no arguments:
+```bash
+$ ./tests_main
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tests_main is a Catch v2.13.4 host application.
+Run with -? for options
+... # cut
+===============================================================================
+test cases:  9 |  8 passed | 1 failed
+assertions: 45 | 44 passed | 1 failed
+```
+
 
 ## Run Specific Tests
 Tests are defined with specific [tags](https://github.com/catchorg/Catch2/blob/devel/docs/test-cases-and-sections.md#tags) in Catch2, and they
