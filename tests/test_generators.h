@@ -81,9 +81,9 @@ TEST_CASE("Illustrating custom generator", "[generators] [custom]") {
         INFO("SECTION A i = " << i);
         SUCCEED();
     }
-    auto y = GENERATE(my_generator());
+    auto j = GENERATE(my_generator());
     SECTION("SECTION B") {
-        INFO("SECTION B i = " << i << ", y = " << y);
+        INFO("SECTION B i = " << i << ", j = " << j);
         SUCCEED();
     }
 }
